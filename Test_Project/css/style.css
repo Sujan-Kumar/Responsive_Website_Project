@@ -142,14 +142,67 @@ header{
     margin:10px 0;
     font-weight: bold;
 }
+/* Second Secton: CSS Codes */
+#second-section{
+    background-color: #184F72;
+    padding:50px 0 100px 0;
+}
+.smart-area-title{
+    text-align:center;
+    font-size:35px;
+    letter-spacing: 0.2em;
+    margin-bottom:30px;
+    color:yellowgreen;
+}
+#smart-area-parent{
+    width:1100px;
+    margin:0 auto;
+    /* margin-left: 200px;
+    margin-right:200px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.smart-text{
+    color:#fff;
+}
+.smart-text h2{
+    margin:20px 0;
+    font-size:30px;
+}
+.smart-text {
+    text-align: justify;
+}
+.smart-text a{
+    text-decoration: none;
+    font-size:22px;
+    background-color:bisque;
+    color:black;
+    padding:10px 30px;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:40px;
+}
 
-/* First Section-Media Query: CSS Codes */
+
 @media only screen and (max-width:688px){
     #service-parent{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap:10px;
         width:100%;
+    }
+    #smart-area-parent{
+        width: 100%;
+        padding: 0 30px;
+        flex-direction: column;
+    }
+    .smart-text h2{
+        margin:16px 0;
+        font-size:19px;
+    }
+    .smart-image{
+        margin-bottom:60px;
     }
 }
 @media only screen and (min-width:689px) and (max-width:1099px){
@@ -158,5 +211,13 @@ header{
         grid-template-columns: repeat(2, 1fr);
         grid-gap:20px;
         width:100%;
+    }
+     #smart-area-parent{
+        width:100%;
+        padding: 0 40px;
+        flex-direction: column;
+    }
+     .smart-image{
+        margin-bottom:60px;
     }
 }
