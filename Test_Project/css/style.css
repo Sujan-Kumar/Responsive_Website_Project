@@ -7,3 +7,101 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+/*Navigation Bar:CSS Codes */
+nav{
+    background-color:#1C2833;
+    width:100%;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 50px 0px 80px;
+}
+.logo{
+    font-size:25px;
+    font-weight: bold;
+    color:#ffffff;
+}
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin:0 8px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size:18px;
+    font-weight:500;
+    color:#ffffff;
+    padding:7px 13px;
+    border-radius:3px;
+    transition:0.5s;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav ul li a:hover, nav ul li a.home{
+    background-color:#566573;
+}
+.menu-btn-humbergur{
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display: none;
+}
+.menu-btn-cross{
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display: none;
+}
+#click{
+    display:none;
+}
+
+@media only screen and (max-width:940px){
+    .menu-btn-humbergur{
+        display: block;
+    }
+    #click:checked ~ .menu-btn-humbergur{
+        display:none;
+    }
+    #click:checked ~ .menu-btn-cross{
+        display: block;
+    }
+    nav ul{
+        position:fixed;
+        top:80px;
+        left:-100%;
+        background-color:#17202ace;
+        width:100%;
+        height: 100vh;
+        flex-direction: column;
+        text-align:center;
+        padding-top:20px;
+        transition: all 0.5s ease;
+    }
+    #click:checked ~ ul{
+        left:0%;
+    }
+    nav ul li{
+        margin:40px 0;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    nav ul li a:hover, nav ul li a.home{
+        background:none;
+        color:#ff0000;
+    }
+}
+/* Header Secton: CSS Codes */
+header{
+ background-image: url('../images/banner.jpg');
+ height: 90vh;
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
