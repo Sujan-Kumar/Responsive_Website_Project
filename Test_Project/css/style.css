@@ -49,20 +49,20 @@ nav ul li a:hover, nav ul li a.home{
     color:#fff;
     font-size:22px;
     cursor:pointer;
-    display: none;
+    display: block;
 }
 .menu-btn-cross{
     color:#fff;
     font-size:22px;
     cursor:pointer;
-    display: none;
+    display: block;
 }
 #click{
-    display:none;
+    display: block;
 }
 
 @media only screen and (max-width:940px){
-    .menu-btn-humbergur{
+    /* .menu-btn-humbergur{
         display: block;
     }
     #click:checked ~ .menu-btn-humbergur{
@@ -70,7 +70,7 @@ nav ul li a:hover, nav ul li a.home{
     }
     #click:checked ~ .menu-btn-cross{
         display: block;
-    }
+    } */
     nav ul{
         position:fixed;
         top:80px;
@@ -184,7 +184,47 @@ header{
     margin-top:40px;
 }
 
-
+/* Third Section:CSS Codes */
+#third-section{
+    background-image: url(../images/bg_img_02.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#about-section-parent{
+    width:1100px;
+    margin:0 auto;
+    display:flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffffff;
+}
+.more-about-vanilla h2{
+    font-size:20px;
+}
+.more-about-vanilla p{
+    margin:20px 0;
+}
+.more-about-vanilla ul{
+    list-style: inside;
+}
+.more-about-vanilla a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: yellow;
+    padding:10px 20px;
+    border-radius: 5px;
+    display:inline-block;
+    margin-top:20px;
+    color:black;
+    font-weight: bold;
+}
+#about-single-items-parent{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:25px;
+}
 @media only screen and (max-width:688px){
     #service-parent{
         display: grid;
