@@ -419,6 +419,65 @@ header{
 .single-takeCare-imgbox img{
     width:100%;
 }
+
+/* Footer Section CSS Codes */
+footer{
+    background-color: #154360;
+    padding:100px 0 50px 0;
+}
+footer hr{
+    margin:50px 0 30px 0;
+    color:#ffffff;
+}
+footer p{
+    text-align: center;
+    color:#ffffff;
+}
+footer p a{
+    text-decoration: underline;
+    color:#9ecf4fa1;
+}
+#footer-content-parent{
+    width:1100px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    color:#ffffff;
+    gap:80px;
+}
+.single-footer-item{
+    flex: 1;
+}
+.single-footer-item h5{
+    text-transform: uppercase;
+    margin-bottom:25px;
+    letter-spacing: 3px;
+}
+.single-footer-item p{
+    font-size: 14px;
+}
+.single-footer-item h5 span{
+    color:yellow;
+}
+.single-footer-item-2 p{
+    margin:15px;
+}
+.single-footer-item-2 a{
+    text-decoration:none;
+    color:#ffffff;
+}
+.single-footer-item-3 ul{
+    list-style: none;
+    display:flex;
+}
+.single-footer-item-3 ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    display:inline-block;
+    margin:5px;
+    padding:5px;
+    background-color:#a0273863;
+}
 @media only screen and (max-width:688px){
     /* Service Section CSS Code Start */
     #service-parent{
@@ -514,6 +573,32 @@ header{
         text-align: center;
     }
     /* Seventh Section CSS Codes End */
+
+    /* Footer Section CSS Codes Start */
+    footer{
+        padding:60px 0 50px 0;
+    }
+    footer p{
+        font-size:12px;
+    }
+    #footer-content-parent{
+        width:100%;
+        padding:0 30px;
+        flex-direction: column;
+        gap:40px;
+    }
+    .single-footer-item{
+        text-align:center;
+    }
+    .single-footer-item h5{
+        margin-bottom:20px;
+    }
+    .single-footer-item ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Footer Section CSS Codes End */
 }
 @media only screen and (min-width:689px) and (max-width:1099px){
     #service-parent{
@@ -602,4 +687,30 @@ header{
         text-align: center;
     }
     /* Seventh Section CSS Codes End */
+
+    /* Footer Section CSS Codes Start */
+    footer{
+        padding:60px 0 50px 0;
+    }
+    #footer-content-parent{
+        width:100%;
+        padding:0 30px;
+        flex-direction: column;
+        gap:40px;
+    }
+    .single-footer-item{
+        text-align:center;
+    }
+    .single-footer-item p{
+        font-size:14px;
+    }
+    .single-footer-item h5{
+        margin-bottom:20px;
+    }
+    .single-footer-item ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Footer Section CSS Codes End */
 }
