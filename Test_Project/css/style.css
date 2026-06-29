@@ -494,12 +494,12 @@ footer hr{
     color:#ffffff;
 }
 footer p{
-    text-align: center;
     color:#ffffff;
 }
 footer p a{
     text-decoration: underline;
     color:#9ecf4fa1;
+    transition:0.3s;
 }
 #footer-content-parent{
     width:1100px;
@@ -524,7 +524,7 @@ footer p a{
     color:yellow;
 }
 .single-footer-item-2 p{
-    margin:15px;
+    margin:10px;
 }
 .single-footer-item-2 a{
     text-decoration:none;
@@ -542,11 +542,19 @@ footer p a{
     padding:5px;
     background-color:#a0273863;
 }
+footer> .footer-last-para{
+    text-align:center;
+}
+footer .footer-last-para a:hover{
+    color:rgba(255, 255, 0, 0.76);
+}
+
 @media only screen and (max-width:688px){
     /* Navbar CSS Codes Start */
-    nav{
-        padding:0px 60px 0px 30px;
-    }
+     .container{
+        width:100%;
+        padding:0 30px;
+     }
     .logo a{
         font-size:25px;
     }
@@ -649,7 +657,7 @@ footer p a{
         gap:30px;
     }
     .single-takeCare h3{
-        font-size:25px;
+        font-size:22px;
         text-align: center;
     }
     /* Seventh Section CSS Codes End */
@@ -659,7 +667,7 @@ footer p a{
         padding:60px 0 50px 0;
     }
     footer p{
-        font-size:12px;
+        font-size:11px;
     }
     #footer-content-parent{
         width:100%;
@@ -682,8 +690,9 @@ footer p a{
 }
 @media only screen and (min-width:689px) and (max-width:1099px){
     /* Navbar CSS Codes Start */
-    nav{
-        padding:0px 50px 0px 50px;
+    .container{
+       width:100%;
+       padding:0 30px;
     }
     .logo a{
         font-size:28px;
