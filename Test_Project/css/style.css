@@ -18,7 +18,7 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
 }
 .container{
     width:1100px;
@@ -141,16 +141,28 @@ header{
 header .banner-text {
 	text-transform: capitalize;
 	padding: 50px;
-	/* background-color: #5880001c; */
 	border-radius: 5px;
 	font-size: 40px;
 }
+
 header .banner-text h2 {
 	font-size: 60px;
 	font-weight: 900;
 	color: #c0bf78ad;
 	font-family: "Dancing Script", cursive;
+    filter: blur(5px);
+    opacity:1;
+    animation: bannerText 2s infinite alternate;
 }
+@keyframes bannerText {
+    from{
+        filter: blur(5px);
+    }
+    to{
+        filter: blur(0px);  
+    }
+}
+
 /* First Section: CSS Codes */
 
 #first-section{
@@ -200,11 +212,7 @@ header .banner-text h2 {
     color:yellowgreen;
 }
 #smart-area-parent{
-    width:1100px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding:0 30px;
 }
 .smart-text{
     color:#fff;
@@ -239,7 +247,7 @@ header .banner-text h2 {
 
 /* Third Section:CSS Codes */
 #third-section{
-    background-image: url(../images/bg_img_02.jpg);
+    background-image: url('../images/bg_img_02.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -542,7 +550,7 @@ footer p a{
     padding:5px;
     background-color:#a0273863;
 }
-footer> .footer-last-para{
+footer .footer-last-para{
     text-align:center;
 }
 footer .footer-last-para a:hover{
@@ -561,8 +569,11 @@ footer .footer-last-para a:hover{
     /* Navbar CSS Codes End */
 
     /* Header CSS Codes Start */
+    header{
+        width:100%;
+    }
     header .banner-text h2 {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
     /* Header CSS Codes End */
@@ -576,20 +587,28 @@ footer .footer-last-para a:hover{
     }
     /* Service Section CSS Code End */
 
-    /* Smart Section CSS Code Start */
+    /* Second Section/Smart Area CSS Code Start */
+    #second-section {  
+        padding: 50px 0 45px 0;
+    }
     #smart-area-parent{
-        width: 100%;
-        padding: 0 30px;
         flex-direction: column;
     }
-    .smart-text h2{
-        margin:16px 0;
-        font-size:19px;
+    #smart-area-parent .smart-image img{
+        width:100%;
     }
-    .smart-image{
-        margin-bottom:60px;
+    .smart-text h4 {
+        font-size: 12px;
     }
-    /* Smart Area CSS Code End */
+    .smart-text h2 {
+        margin: 16px 0;
+        font-size: 16px;
+    }
+    .smart-text a {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    /* Second Section/Smart Area CSS Code End */
 
     /* About Section CSS Code Start */
       .more-about-vanilla a{
@@ -700,6 +719,9 @@ footer .footer-last-para a:hover{
     /* Navbar CSS Codes End */
 
     /* Header CSS Codes Start */
+     header{
+        width:100%;
+    }
     header .banner-text h2 {
         font-size: 50px;
         text-align: center;
@@ -712,14 +734,25 @@ footer .footer-last-para a:hover{
         grid-gap:20px;
         width:100%;
     }
-     #smart-area-parent{
-        width:100%;
-        padding: 0 40px;
+   /* Second Section/Smart Area CSS Code Start */
+    #smart-area-parent{
         flex-direction: column;
     }
-     .smart-image{
-        margin-bottom:60px;
+   #smart-area-parent .smart-image img{
+        width:100%;
     }
+    #second-section {  
+        padding: 50px 0 50px 0;
+    }
+    .smart-text h2 {
+        margin:20px 0;
+        font-size: 25px;
+    }
+    .smart-text a {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    /* Second Section/Smart Area CSS Code End */
     #about-section-parent{
         width:100%;
         padding:0 30px;
